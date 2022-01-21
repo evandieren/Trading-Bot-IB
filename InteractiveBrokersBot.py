@@ -20,7 +20,7 @@ class Bot:
   ib = None
   def __init__(self):
     self.ib = IBApi()
-    self.ib.connect("127.0.0.1",7497,1)
+    self.ib.connect("127.0.0.1",0000,1)
     ib_thread = threading.Thread(target=self.run_loop,daemon=True)
     ib_thread.start() # will initiate the connection and start listening to the objects
     time.sleep(1) # because there are some messages when we are connecting to IB
